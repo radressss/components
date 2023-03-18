@@ -1,0 +1,94 @@
+.button {
+    height: 50px;
+    border: none;
+    border-right: 1px solid black;
+    border-left: 1px solid black;
+    min-width: 100px;
+    width: 100px;
+    cursor: pointer;
+    background-color: white;
+}
+
+.button:hover {
+    background-color: #333;
+    color: lime;
+}
+
+.border-top {
+    border-top: 1px solid black;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+.border-bottom {
+    border-bottom: 1px solid black;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.slide-from-right {
+    animation: slide-from-right 0.4s ease-out;
+    animation-fill-mode: forwards;
+    opacity: 0;
+}
+
+.slide-from-left {
+    animation: slide-from-left 0.4s ease-out;
+    animation-fill-mode: forwards;
+    opacity: 0;
+}
+
+.red-background{
+    text-align: center;
+    width: 300px;
+    height: 200px;
+    background-color: #de999e;
+    border-radius: 20px;
+    border: 1px solid black;
+    margin: 100px;
+}
+
+.right-click-background{
+    text-align: center;
+    width: 300px;
+    height: 200px;
+    background-color: aliceblue;
+    border-radius: 20px;
+    border: 1px solid black;
+    margin: 100px
+}
+
+.click-buttons {
+    display: flex;
+}
+
+.hovers {
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+
+@keyframes slide-from-right {
+    from {
+        transform: translateX(100vw);
+        opacity: 1;
+    }
+    to {
+        transform: translateX(0%);
+        opacity: 1;
+    }
+}
+@keyframes slide-from-left {
+    from {
+        transform: translateX(-100vw);
+        opacity: 1;
+    }
+    to {
+        transform: translateX(0%);
+        opacity: 1;
+    }
+}
